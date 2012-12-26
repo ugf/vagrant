@@ -1,6 +1,5 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
-#Testing
 
 Vagrant::Config.run do |config|
   # All Vagrant configuration is done here. The most common configuration
