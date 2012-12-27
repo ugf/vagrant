@@ -7,15 +7,16 @@ Setup
 -----
 * [install virtual box] (https://www.virtualbox.org/wiki/Downloads)
 * [install vagrant] (http://downloads.vagrantup.com/)
+* setup a base box
+    Drop to the command line in the vagrant/package_creation folder and run
+      `vagrant up`
+      `vagrant package`
+      `mkdir ..\boxes`
+      `xcopy package.box ..\boxes\ubuntu_dev.box`
+    This will setup a base box that is similar to our Rightscale ubuntu image.
 
 Examples
 --------
-From the command line run:
-
-    vagrant box add ubuntu http://dl.dropbox.com/u/4031118/Vagrant/ubuntu-12.04.1-server-i686-virtual.box
-
-This command will download a ubuntu box to your local machine and associate it with the alias *ubuntu*.
-
 To start an operations vm, drop to the command in the vagrant/operations folder and run
 
 `vagrant up`
