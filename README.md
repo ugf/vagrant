@@ -10,10 +10,11 @@ Setup
 * setup a base box
     Drop to the command line in the vagrant/package_creation folder and run
 
+`vagrant up`
+`del package.box` If package.box exists
 `
-vagrant up
 vagrant package
-copy package.box ..\boxes\ubuntu_dev.box
+copy package.box ..\boxes\ubuntu_dev.box /y
 vagrant destroy -f
 `
 
@@ -23,6 +24,7 @@ Examples
 --------
 To start an operations vm, drop to the command in the vagrant/operations folder and run
 
+`vagrant box remove ubuntu_dev` If an ubuntu_dev box already exists from a previous package
 `vagrant up`
 
 To ssh in (from windows) use putty and connect to port 2222 against ip 127.0.0.1.  Use the ppk file that is in the boxes
