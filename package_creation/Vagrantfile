@@ -67,6 +67,7 @@ Vagrant::Config.run do |config|
     chef.cookbooks_path = "../../infrastructure/cookbooks"
     chef.add_recipe "vagrant"
     chef.add_recipe "ruby"
+    chef.add_recipe "ruby::gems"
 
     # You may also specify custom JSON attributes:
     chef.json = { :core => {

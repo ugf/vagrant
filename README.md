@@ -17,7 +17,7 @@ Drop to the command line in the vagrant/package_creation folder and run
 
 `vagrant package`
 
-`copy package.box ..\boxes\ubuntu_dev.box`
+`copy package.box ..\boxes\ubuntu_dev.box /y`
 
 `vagrant destroy -f`
 
