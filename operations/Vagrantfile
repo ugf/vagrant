@@ -22,10 +22,11 @@ Vagrant::Config.run do |config|
     chef.add_recipe 'deployment_services'
 
     # You may also specify custom JSON attributes:
-    #chef.json = { :core => {
-    #  :aws_access_key_id => '',
-    #  :aws_secret_access_key => ''
-    #  }
-    #}
+    chef.json = {
+      :cloud => {
+        :provider => '',
+        :private_ips => ['']
+      }
+    }
   end
 end
