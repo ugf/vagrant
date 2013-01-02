@@ -16,7 +16,7 @@ Vagrant::Config.run do |config|
   config.vm.share_folder 'deployscripts_infrastructure', '/deployscripts_infrastructure', '../deployscripts_infrastructure'
 
   config.vm.provision :chef_solo do |chef|
-    chef.cookbooks_path = ['../../infrastructure/cookbooks', '../../cookbooks', '../../rightscale_cookbooks']
+    chef.cookbooks_path = ['../../infrastructure/cookbooks', '../../cookbooks', '../../rightscale_cookbooks/cookbooks']
     chef.add_recipe 'apache2'
     chef.add_recipe 'passenger'
     chef.add_recipe 'deployment_services'
